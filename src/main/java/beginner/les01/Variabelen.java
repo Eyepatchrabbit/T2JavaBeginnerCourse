@@ -33,7 +33,7 @@ public class Variabelen {
         doubleVariable = 4.9E-324;
         longVariable= Long.MAX_VALUE;
 
-        printVariables("Minimum variables;", byteVariable, shortVariable,-2147483648, longVariable, floatVariable, doubleVariable, '\u03B1', false);
+        printVariables("Minimum variables;", byteVariable, shortVariable,-2147483648, longVariable, floatVariable, doubleVariable, (char) 64, false);
 
         //the max
         byteVariable =127;
