@@ -1,4 +1,4 @@
-package beginner.les01;
+package main.java.beginnercoursettwo.les01;
 
 public class RekenMachine {
 

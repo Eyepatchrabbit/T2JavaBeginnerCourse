@@ -1,4 +1,4 @@
-package main.TimBuchalka.javacourse;
+package main.java.TimBuchalka.javacourse;
 
 public class LeapOfYear {
     public static void main(String[] args) {
