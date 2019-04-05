@@ -1,4 +1,4 @@
-package main.java.TimBuchalka.javacourse;
+package TimBuchalka.javacourse;
 
 public class TeenNumber {
 

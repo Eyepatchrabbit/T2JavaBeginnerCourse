@@ -1,4 +1,4 @@
-package main.java.beginnercoursettwo.les01;
+package beginnercoursettwo.les01;
 
 public class Variabelen {
     public static void main(String[] args) {
