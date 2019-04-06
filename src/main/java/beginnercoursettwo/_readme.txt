@@ -32,3 +32,26 @@ operatoren;
     getal++ =>verlagen met 1
     -getal => negatieve getal nemen
     +getal => byte/short/char neer int zetten
+
+
+LESSON 02:
+==========
+
+/!\ DON'T FORGET TO CLOSE ELEMENTS LIKE THE SCANNER /!\ -> resourses use!!!!!
+
+!!Don't think you know everything kid!!
+
+=> Learn to research for possible solutions!->read online documentations
+
+relationele operatoren->return booleans (>,>=,<,<=,==, !=)
+    !there is an order in which the statements are done (or not done)
+        && -> both need to be true
+        || -> one needs to be true (mac->shift+alt+l)
+
+        order-> brackets (), and && , or ||
+        Always try to make it as simple as possible
+
+Shortcut operators: +=, -=, *=, /=
+
+
+Exercises for home!
