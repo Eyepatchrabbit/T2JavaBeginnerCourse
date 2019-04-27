@@ -55,3 +55,10 @@ Shortcut operators: +=, -=, *=, /=
 
 
 Exercises for home!
+
+
+LESSON 03:
+==========
+
+
+
