@@ -2,22 +2,16 @@ package beginnercoursettwo.les03;
 
 import java.util.Scanner;
 
+import static beginnercoursettwo.les03.KeyboardUtility.*;
+
 public class Calculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        try {
-            System.out.print("give in first number:");
-            int firstNumber = scanner.nextInt();
+        int firstNumber= KeyboardUtility.vraagGetalOp();
+        int secondNumber= KeyboardUtility.vraagGetalOp();
 
-            System.out.print("give in first number:");
-            int secondNumber = scanner.nextInt();
+        printResults(firstNumber, secondNumber);
 
-            printResults(firstNumber, secondNumber);
-
-        } finally {
-            scanner.close();
-        }
     }
 
     private static void printResults(int firstNumber, int secondNumber) {
