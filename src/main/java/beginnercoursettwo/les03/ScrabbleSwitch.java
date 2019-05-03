@@ -22,7 +22,7 @@ public class ScrabbleSwitch {
 
 
             System.out.println("Give in a location");
-            String locationGiven = inputKeyboard.next().toLowerCase();
+            String locationGiven = inputKeyboard.next().toUpperCase();
             int locationMultilier = valueMultiplier(locationGiven);
 
 
