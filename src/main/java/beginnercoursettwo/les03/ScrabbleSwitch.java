@@ -14,14 +14,14 @@ public class ScrabbleSwitch {
         Scanner inputKeyboard = new Scanner(System.in);
 
         try {
-            System.out.println("Give in a letter");
+            System.out.println("Give in 1 letter");
             String letter = inputKeyboard.next();
 
             char characterUsed = letter.toLowerCase().charAt(0);
             int basevalue = letterValue(characterUsed);
 
 
-            System.out.println("Give in a location");
+            System.out.println("Give in a location (letterNummer, example: A1)");
             String locationGiven = inputKeyboard.next().toUpperCase();
             int locationMultilier = valueMultiplier(locationGiven);
 

@@ -1,9 +1,9 @@
-package TimBuchalka.javacourse;
+package timbuchalka.javacourse;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import static TimBuchalka.javacourse.AreaCalculator.area;
+import static timbuchalka.javacourse.AreaCalculator.area;
 
 public class AreaCalculatorTest {
 

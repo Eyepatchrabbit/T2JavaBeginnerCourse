@@ -1,0 +1,1 @@
+This package is just some random stuff I thought to make for myself

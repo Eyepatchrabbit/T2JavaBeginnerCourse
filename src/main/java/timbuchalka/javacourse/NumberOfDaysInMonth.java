@@ -1,4 +1,4 @@
-package TimBuchalka.javacourse;
+package timbuchalka.javacourse;
 
 public class NumberOfDaysInMonth {
     public static boolean isLeapYear(int year) {

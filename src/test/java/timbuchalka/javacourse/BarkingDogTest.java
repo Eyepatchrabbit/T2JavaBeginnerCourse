@@ -1,10 +1,10 @@
-package TimBuchalka.javacourse;
+package timbuchalka.javacourse;
 
 import org.junit.Assert;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import static TimBuchalka.javacourse.BarkingDog.bark;
+import static timbuchalka.javacourse.BarkingDog.bark;
 
 public class BarkingDogTest {
 

@@ -59,6 +59,28 @@ Exercises for home!
 
 LESSON 03:
 ==========
+=>conditionals
+
+
+LESSON 04:
+==========
+=>iterate
+    lus voortijdig breken=> "break;"
+
+Object oriented programmming
+    scope
+        private -> enkel binnen eigen class
+            ->best practice->afsherming data
+        public -> iedere classe in program kunnen het gebruiken
+        protected
+        package-private
+    constructur => verplicht in te vullen
+    methode     -> optionele properties
+
+    groepeer logisherwijs om code te kunnen gaan herbruiken
+
+
+
 
 
 

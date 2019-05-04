@@ -1,4 +1,4 @@
-package TimBuchalka.javacourse;
+package timbuchalka.javacourse;
 
 public class NumberInWord {
     public static void printNumberInWord (int number){
