@@ -8,10 +8,8 @@ public class PlayingBlackjack {
     private Player dealer;
 
     public PlayingBlackjack() {
-        //first see for player himself
         player = new Player(drawCard(), drawCard(), 16);
 
-        //see for Dealer (player !blackjack and not over 21)
         dealer = new Player(drawCard(), drawCard(), 17);
     }
 
