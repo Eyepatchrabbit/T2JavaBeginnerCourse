@@ -1,0 +1,91 @@
+Doel van het spel
+------------------
+Opmerking: voor deze opdracht gaan we een versimpelde versie maken van blackjack,
+wegens tijdsgebrek. Dingen zoals splitten en dergelijke komen hier niet aan bod.
+
+Blackjack (ook gekend als 21’en) is een kaartstrategiespel waarbij het de bedoeling is om
+een totale som van 21 te hebben, verdeeld onder al de kaarten die aan jou zijn toebedeeld,
+of daar zo dicht mogelijk bij te zijn, zonder meer te hebben dan 21.
+
+De waarde van de kaarten 2 tot en met 10 is gewoon het getal dat op de kaart zelf staat.
+
+Een aas is 1 of 11, de boer, dam en koning zijn elk 10 waard.
+
+Een speler krijgt in het begin van het spel altijd 2 kaarten.
+
+Indien hij geen blackjack heeft,
+kan hij ervoor opteren om nog een kaart bij te vragen. Dit kan hij doen door te “hitten”. De
+dealer zal dan een kaart geven.
+
+Zolang de speler geen blackjack heeft of niet boven de 21 zit
+in totaal, kan hij kaarten blijven bij vragen aan de dealer.
+
+De speler moet ook blijven kaarten
+vragen tot hij minstens 16 heeft.
+
+
+Vanaf het moment dat de speler meer dan 21 heeft zal hij automatisch verliezen.
+
+Heeft de
+speler geen 21, kan hij ervoor opteren om te “blijven” (stay) met zijn kaarten en dus geen
+nieuwe meer te krijgen van de dealer.
+
+Indien de speler “blijft”, moet de dealer ook aan zichzelf 2 kaarten geven.
+
+De dealer moet
+blijven spelen tot hij minstens 17 heeft.
+
+Als de dealer blackjack heeft wint de dealer
+automatisch.
+
+Indien de dealer meer dan 21 haalt is de speler automatisch gewonnen.
+
+Indien
+de dealer minstens 17 heeft en minder dan 21, zal hij stoppen met het bijnemen van
+kaarten en vindt er een “showdown” plaats.
+
+
+Bij een showdown worden de kaarten van de dealer en de speler getoond. De persoon met
+de hoogste som wint het spel. Indien bij spelers dezelfde waarde hebben, wint de dealer.
+
+
+
+Hoe blackjack maken
+-------------------
+Blackjack maken kan op verschillende manieren.
+• Reguliere som: dit is de eenvoudigste, door een optelsom te maken van de waarden
+van de getallen. Bv: 10 (10 kaart, boer, dam, koning) + 5 + 6
+
+• Aas: Indien de speler of dealer een aas en een 10 (10 kaart, boer, dam, koning) heeft
+op zijn eerste beurt
+
+
+Functionele analyse
+-------------------
+speler specifiek:
+-Bij het krijgen van een kaart genereer je een willekeurige waarde tussen 2 en 11.
+
+-De speler zal automatisch kaarten bijkrijgen tot hij minstens 16 heeft, in het geval dat zijn eerste 2 kaarten minder zijn dan 16.
+
+-`Zo lang de speler dan minder heeft dan 21, kan hij kaarten blijven bij vragen, door “yes” in te geven.
+
+-Bij 21 stopt het spel met de boodschap “Congratulations, you’ve won with a blackjack!”.
+
+-Indien hij meer dan 21 heeft stop het spel met de boodschap “Too bad, you lose!”.
+
+Dealer:
+-Als de speler geen 21 heeft, meer dan 16 en geen nieuwe kaart wil, zal de dealer 2 kaarten krijgen.
+
+-Indien de dealer geen 17 heeft, zal de dealer automatisch kaarten bijkrijgen.
+
+Indien hij 17 of meer heeft, stopt de dealer automatisch met het bijkrijgen van kaarten.
+
+-Als de dealer 21 heeft, stopt het spel met de boodschap “Too bad, the dealer has a blackjack!”.
+
+-Indien de dealer meer heeft dan 21 stopt het spel met de boodschap “Congratulations, you’ve won! The dealer has more than 21!”.
+
+
+-Als beide spelers niet meer hebben dan 21, wordt er gekeken of de speler een grotere som heeft dan de dealer. Dan wint de speler met de boodschap “Congratulations, you’ve won!”.
+
+-Zoniet, “Too bad, you lose!”. Aan het einde van ieder spel wordt gevraagd om een nieuw spel te spelen, door “yes” in te
+geven.
