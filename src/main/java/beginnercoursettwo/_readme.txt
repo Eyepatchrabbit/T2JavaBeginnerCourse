@@ -84,3 +84,33 @@ Object oriented programmming
 
 
 
+LESON06
+=======
+    static methods
+        => dont need an object first
+        ->are inherent to the class themself
+    non static methods
+        =>do need an object to be initiated before it can be used
+        ->doing something with the elements created in the object self
+
+
+met objecten->verwijzing object in ramgeheugen
+    dus object1 == object2 is altijd vals (tenzij object1 = object2)
+
+    om toch iets te hebben om te vergelijken => .equals
+        ->overerfd van de object methode!
+
+ARRAYS
+    ->verzameling van objecten (van hetzelfde type)
+    =>lijst objecten met bepaalde volgorde
+    ! heeft bepaalde grootte
+
+
+
+Nog te gaan:
+============
+7)  25-5-2019 09:00
+8)  8-6-2019 09:00
+9)  15-6-2019 09:00
+10) 22-6-2019 09:00
+

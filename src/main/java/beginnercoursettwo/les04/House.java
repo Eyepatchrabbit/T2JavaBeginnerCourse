@@ -60,4 +60,21 @@ public class House {
 
     }
 
+    public boolean equals(Object object) {
+        if (object instanceof House) {
+            House houseToCompare = (House) object;
+            if (houseToCompare.getHouseGarden() == null && this.houseGarden == null) {
+                return baseElementsEqualForComparisonHouses(houseToCompare);
+            } else if (houseToCompare.getHouseGarden() != null && this.houseGarden != null) {
+                return baseElementsEqualForComparisonHouses(houseToCompare) && houseToCompare.getHouseGarden().equals(this.houseGarden);
+            }
+        }
+        return false;
+    }
+
+    private boolean baseElementsEqualForComparisonHouses(House houseToCompare) {
+        return houseToCompare.getAdress().equals(this.adress) && houseToCompare.getRooms() == this.rooms;
+    }
+
+
 }

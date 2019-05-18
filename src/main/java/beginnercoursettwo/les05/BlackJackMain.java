@@ -67,14 +67,13 @@ public class BlackJackMain {
     }
 
     private static void itsTheFinalShowdown(PlayingBlackjack playingBlackjack) {
-        Player player = playingBlackjack.getPlayer();
         Player dealer = playingBlackjack.getDealer();
 
         if (dealer.moreThen21()) {
             System.out.println("Congratulations, you’ve won! The dealer has more than 21!");
         } else if (dealer.hasBlackjack()) {
             System.out.println("Too bad, the dealer has a blackjack!");
-        } else if (dealer.getSomKaarten() < player.getSomKaarten()) {
+        } else if (dealer.getSomKaarten() < playingBlackjack.getPlayer().getSomKaarten()) {
             System.out.println("Congratulations, you’ve won!");
         } else {
             System.out.println("Too bad, you lose!");
