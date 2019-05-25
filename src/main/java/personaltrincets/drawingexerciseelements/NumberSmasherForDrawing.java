@@ -14,10 +14,10 @@ public class NumberSmasherForDrawing {
         Scanner input = new Scanner(System.in);
 
         try {
-            System.out.println("Give in highest possible number");
+            System.out.println("Give highest possible number");
             int highestnumber = input.nextInt();
 
-            System.out.println("Give in number of repeats");
+            System.out.println("Give number of repeats");
             int repeats = input.nextInt();
 
             System.out.println("Using PokemonList? (y,n)");
@@ -147,7 +147,6 @@ public class NumberSmasherForDrawing {
                 "Slowpoke",
                 "Slowbro",
                 "Magnemite",
-                "elektrisch",
                 "Magneton",
                 "elektrisch",
                 "Farfetch'd",

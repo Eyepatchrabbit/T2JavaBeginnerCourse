@@ -107,9 +107,34 @@ ARRAYS
 
 
 
+LES07
+=====
+Array->altijd vaste grote
+    1e element = 0
+
+    !kan een 2D array maken!=>niet aangeraden
+
+alternatief: List
+    ArrayList!
+        ->enkel werken met objecten!
+        =>werkt niet met primitieve datatypes :<
+            oplossing=>use elements like 'Integer' in plaats van 'int'
+           ook meer functionaliteit
+           kan gesorteerd worden
+
+JDK =bekijken van enkele veel gebruikte klassen
+    String
+        -> meest gebruikte
+        -> immutable: blijft altijd hetzelfde->eigen waarde nooit zelf gaan aanpassen!
+    Math
+        ->ook altijd geimporteerd
+
+
+
+
+
 Nog te gaan:
 ============
-7)  25-5-2019 09:00
 8)  8-6-2019 09:00
 9)  15-6-2019 09:00
 10) 22-6-2019 09:00
