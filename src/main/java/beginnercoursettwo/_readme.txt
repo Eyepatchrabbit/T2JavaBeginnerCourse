@@ -130,12 +130,12 @@ JDK =bekijken van enkele veel gebruikte klassen
         ->ook altijd geimporteerd
 
 
-
+LES 08
+======
 
 
 Nog te gaan:
 ============
-8)  8-6-2019 09:00
 9)  15-6-2019 09:00
 10) 22-6-2019 09:00
 
