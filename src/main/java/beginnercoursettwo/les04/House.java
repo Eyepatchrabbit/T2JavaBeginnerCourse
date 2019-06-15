@@ -7,12 +7,10 @@ public class House {
     private HouseGarden houseGarden;
 
     public House(String adress) {
-        //this.adress=adress;
         setAdress(adress);
     }
 
     public House(String adress, int trees) {
-        //this.adress=adress;
         setAdress(adress);
         if (trees > 0) {
             this.houseGarden = new HouseGarden(trees);

@@ -20,9 +20,6 @@ public class Deck {
     }
 
     public Card drawCard() {
-//        int randomcardlocation = new Random().nextInt(cards.size());
-//        Card randomcard = cards.remove(randomcardlocation);
-//        return randomcard;
         return cards.remove(new Random().nextInt(cards.size()));
 
     }

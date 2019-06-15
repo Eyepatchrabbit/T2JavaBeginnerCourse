@@ -4,31 +4,59 @@ import java.util.Scanner;
 
 public class presidentMain {
 
-    private static Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         boolean keepPlaying = true;
-
+        Scanner scanner = new Scanner(System.in);
         while (keepPlaying) {
-            boolean gameBussy = true;
 
-            System.out.println("give in the number of players");
+            System.out.println("Give total number of players");
             int numberOfPlayers = scanner.nextInt();
 
-            PresidentGame presidentGame = new PresidentGame(numberOfPlayers);
-            presidentGame.start();
-
-            while (gameBussy) {
-                presidentGame.getNextPlayer();
-            }
-
+            gameInSession(new PresidentGame(numberOfPlayers));
 
             System.out.println("do you want to continue With a new game");
-            String continueWithPlaying = scanner.next();
-            if (!(continueWithPlaying.equals("y") || continueWithPlaying.equals("Yes"))) {
+            String continueWithPlaying = scanner.next().toLowerCase();
+            if (!(continueWithPlaying.equals("y") || continueWithPlaying.equals("yes"))) {
                 keepPlaying = false;
             }
         }
+    }
+
+
+    private static void gameInSession(PresidentGame presidentGame) {
+        presidentGame.start();
+
+        while (!presidentGame.isGameOver()) {
+            Player player = presidentGame.getNextPlayer();
+
+            if (presidentGame.getLastPlayerWhoPlayedCard().equals(player) || presidentGame.getLastPlayedCard().getValue() == 14) {
+                player = presidentGame.newRound();
+            }
+
+            if (player.isPassed()) {
+                System.out.println("player " + player.getId() + " had passed.");
+            } else {
+                Card cardToPlay;
+                if (player.isHumanPlayer()) {
+                    cardToPlay = player.askForCardToPlay(presidentGame.getLastPlayedCard());
+                } else {
+                    cardToPlay = player.getLowestPlayable(presidentGame.getLastPlayedCard());
+                }
+
+                if (cardToPlay != null) {
+                    player.playCard(cardToPlay);
+
+                    presidentGame.setLastPlayerWhoPlayedCard(player);
+                    presidentGame.setLastPlayedCard(cardToPlay);
+                } else {
+                    player.setPassed(true);
+                }
+            }
+
+
+        }
+
 
     }
+
 }

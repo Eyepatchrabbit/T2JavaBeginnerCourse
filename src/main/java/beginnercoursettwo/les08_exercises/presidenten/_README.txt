@@ -37,8 +37,11 @@ De volgende speler is altijd de speler met het ID gelijk aan die van de vorige s
 de vorige speler gelijk is aan het aantal spelers is de volgende speler terug speler 1. Als de huidige
 speler niet de menselijke speler is, zal altijd de laagste mogelijke kaart worden gespeeld. Wanneer
 de menselijke speler aan beurt is zal hij te zien krijgen welke kaarten hij nog in zijn handen heeft om
-daarna een keuze te maken welke kaart hij zal spelen. De speler geeft dan gewoon het getal in van
-de kaart die hij wil spelen. Dit kan potentieel niet de laagste kaart zijn. De menselijke speler is dus de
+daarna een keuze te maken welke kaart hij zal spelen.
+
+De speler geeft dan gewoon het getal in van de kaart die hij wil spelen.
+
+Dit kan potentieel niet de laagste kaart zijn. De menselijke speler is dus de
 enige speler die niet altijd de laagst mogelijke kaart hoeft te leggen.
 Als een speler niet kan volgen (wanneer hij geen kaart heeft die gelijk aan of groter is dan de laatst
 opgelegde kaart) zal de speler automatisch passen en zal er worden overgegaan naar de volgende
@@ -47,6 +50,8 @@ Pas wanneer een nieuwe ronde start kan een speler die heeft gepast weer meespele
 speler kan ook manueel passen door -1 in te geven als er aan hem wordt gevraagd een kaart te
 leggen. Indien de menselijke speler geen kaart kan leggen geldt dezelfde regel als voor alle andere
 spelers, dat er automatisch wordt gepast.
+
+
 Een nieuwe ronde begint wanneer alle spelers, buiten de speler die de laatste kaart heeft gelegd,
 passen, of wanneer er een aas wordt gespeeld. De speler die mag uitkomen in de nieuwe ronde is de
 laatste speler die een kaart heeft gelegd.

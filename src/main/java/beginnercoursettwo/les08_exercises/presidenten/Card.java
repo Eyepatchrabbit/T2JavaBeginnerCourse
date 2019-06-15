@@ -34,4 +34,22 @@ public class Card {
         return false;
     }
 
+    public String toString() {
+        String valueCard = String.valueOf(getValue());
+
+        if (getValue() > 10) {
+            if (getValue() == 11) {
+                valueCard = "Jack";
+            } else if (getValue() == 12) {
+                valueCard = "Queen";
+            } else if (getValue() == 13) {
+                valueCard = "King";
+            } else {
+                valueCard = "Ace";
+            }
+        }
+
+        return valueCard + " of " + getSuite();
+    }
+
 }
