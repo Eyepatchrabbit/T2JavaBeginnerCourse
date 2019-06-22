@@ -134,7 +134,8 @@ LES 08
 ======
 
 
-Nog te gaan:
-============
-10) 22-6-2019 09:00
+Les 10
+=======
 
+recursive call: "main(args)" ->alternatieve methode voor spel terug te beginnen
+    =>zie hoe het gebruikt werd in de minenverger game!

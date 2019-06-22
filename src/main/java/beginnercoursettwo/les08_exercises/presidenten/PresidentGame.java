@@ -19,10 +19,6 @@ public class PresidentGame {
         this.numberOfPlayers = numberOfPlayers;
     }
 
-    public void setLastPlayerWhoPlayedCard(Player lastPlayerWhoPlayedCard) {
-        this.lastPlayerWhoPlayedCard = lastPlayerWhoPlayedCard;
-    }
-
     public Card getLastPlayedCard() {
         return lastPlayedCard;
     }
@@ -33,6 +29,10 @@ public class PresidentGame {
 
     public Player getLastPlayerWhoPlayedCard() {
         return lastPlayerWhoPlayedCard;
+    }
+
+    public void setLastPlayerWhoPlayedCard(Player lastPlayerWhoPlayedCard) {
+        this.lastPlayerWhoPlayedCard = lastPlayerWhoPlayedCard;
     }
 
     public void start() {
@@ -84,14 +84,15 @@ public class PresidentGame {
     }
 
     public Player newRound() {
+        System.out.println("starting new round");
         for (Player player : players) {
             player.setPassed(false);
         }
-
         lastPlayedCard = twoOfClubs;
 
-        return lastPlayerWhoPlayedCard;
+        lastPlayer = lastPlayerWhoPlayedCard;
 
+        return lastPlayerWhoPlayedCard;
     }
 
 }

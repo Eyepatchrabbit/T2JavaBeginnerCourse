@@ -14,7 +14,7 @@ public class presidentMain {
 
             gameInSession(new PresidentGame(numberOfPlayers));
 
-            System.out.println("do you want to continue With a new game");
+            System.out.println("do you want to continue With a new game. If so type y(es)");
             String continueWithPlaying = scanner.next().toLowerCase();
             if (!(continueWithPlaying.equals("y") || continueWithPlaying.equals("yes"))) {
                 keepPlaying = false;
@@ -34,7 +34,7 @@ public class presidentMain {
             }
 
             if (player.isPassed()) {
-                System.out.println("player " + player.getId() + " had passed.");
+                System.out.println("player " + player.getId() + " is passed.");
             } else {
                 Card cardToPlay;
                 if (player.isHumanPlayer()) {
@@ -50,12 +50,18 @@ public class presidentMain {
                     presidentGame.setLastPlayedCard(cardToPlay);
                 } else {
                     player.setPassed(true);
+                    System.out.println("Player " +player.getId()+" had to pass.");
                 }
             }
 
-
+            if (presidentGame.isGameOver()){
+                if (player.getId()==1){
+                    System.out.println("You won");
+                }else {
+                    System.out.println("Player "+player.getId()+" has won. Sorry You lose");
+                }
+            }
         }
-
 
     }
 

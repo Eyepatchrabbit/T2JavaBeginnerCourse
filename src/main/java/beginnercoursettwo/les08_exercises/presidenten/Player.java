@@ -32,30 +32,35 @@ public class Player {
 
 
     public void playCard(Card card) {
-        System.out.println("Player " + getId() + " plays card " + card.toString() + ". Number of cards in hand=" + playersHand.size());
+        System.out.println("Player " + getId() + " plays card " + card.toString() + ". Number of cards in hand=" + (playersHand.size() - 1));
         playersHand.remove(card);
     }
 
     public Card getLowestPlayable(Card lastPlayedCard) {
         Card lowestPossibleCard = null;
 
-        for (Card card : playersHand) {
-            if (card.getValue() >= lastPlayedCard.getValue()) {
-                if (lowestPossibleCard != null && lowestPossibleCard.getValue() > card.getValue()) {
-                    lowestPossibleCard = card;
-                } else if (lowestPossibleCard == null) {
-                    lowestPossibleCard = card;
+        if (lastPlayedCard.getValue() < 14) {
+            for (Card card : playersHand) {
+                if (card.getValue() >= lastPlayedCard.getValue()) {
+                    if (lowestPossibleCard != null && lowestPossibleCard.getValue() > card.getValue()) {
+                        lowestPossibleCard = card;
+                    } else if (lowestPossibleCard == null) {
+                        lowestPossibleCard = card;
+                    }
                 }
             }
         }
-
         return lowestPossibleCard;
     }
 
     public void showCards() {
         System.out.println("The cards in your hand are:");
         for (Card card : playersHand) {
-            System.out.println(card.toString());
+            if (!card.equals(playersHand.get(playersHand.size() - 1))) {
+                System.out.print(card.toString() + ", ");
+            } else {
+                System.out.print(card.toString());
+            }
         }
     }
 
@@ -69,8 +74,9 @@ public class Player {
 
         if (lowestplayableCard != null) {
             showCards();
-            System.out.println("\nYour Turn. Which card do you want to play?" + lastPlayedCard.toString() + " Type value of Card");
+            System.out.println("\nYour Turn. Which card do you want to play? Give in the value: ");
             Scanner scanner = new Scanner(System.in);
+            //TODO: check if it is possible to play this (that player can't cheat): see if >= last played card !
             int cardChosen = scanner.nextInt();
 
             if (cardChosen > 0) {
@@ -82,7 +88,6 @@ public class Player {
                 }
             }
         }
-
         return cardToPlay;
     }
 
@@ -91,14 +96,11 @@ public class Player {
         if (object instanceof Player) {
 
             Player playerToCompare = (Player) object;
-            if (playerToCompare.getId()==getId()){
-                areEquals=true;
+            if (playerToCompare.getId() == getId()) {
+                areEquals = true;
             }
-
         }
-
         return areEquals;
-
     }
 
 }
