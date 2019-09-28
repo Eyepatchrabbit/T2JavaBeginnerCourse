@@ -22,4 +22,26 @@ classes kunnen niets van
     ! ieder object erft over van Object classe!
 
 
+            | eigen | package  |  sub klasse | andere module
+private     |   v
+ - (pakage) |   v       v
+ protected  |   v       v              v
+ public     |   v       v              v            v
+
  (?)=>why in shapeMain no need to import the other classes ->look into  this
+
+constructors:
+->moet dan meegegeven worden aan andere
+
+!kunnen sp elementen verplict maken dat iedere subclasse zijn eigen  methode toe te voegen -> door maken abstract
+    ->hierbinnen aanduiden abstract
+
+waarom extenden klassen -> onder zelfde noemer groeperen
+    ->in zelfde lijst/array steken omdat ze dezelfde klasse extenden !
+
+     ook kunnen we iets als Shape circle = new Circle();
+     MAAR NIET Circle circle= new Shape();
+
+
+Lesson 2
+--------
