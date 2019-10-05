@@ -45,3 +45,58 @@ waarom extenden klassen -> onder zelfde noemer groeperen
 
 Lesson 2
 --------
+Wanneer abstracte klasse gebruiken:
+-Meerdere klassen met gemeenschappelijke klasse en 1 verschllend
+-
+
+Nadeel:
+-kunnen enkel van 1 klasse Extenden
+-niet geschikt voor werken met derde partijen
+-moeilijk combineerbaar met populaire frameworks
+
+    =>oplossing gebruik maken interfaces
+        ->elke methode abstract
+        ->mogelijk om multiple interfaces te implementeren
+        =>gebruikt 'implements'
+
+Exception handeling
+    -> applicatie stopt (vb: delen door 0)
+       ->kunnen fout opvangen en zorgen dat iets nieuws kan worden ingevoerd/uitgevoerd
+
+        ->kunnen zien wat we doen met specifieke errors
+
+Lesson 3
+--------
+
+Lesson 4
+--------
+
+Lesson 5
+--------
+
+Lesson 6
+--------
+
+Lesson 7
+--------
+
+Lesson 8
+--------
+
+Lesson 9
+--------
+
+Lesson 10
+---------
+
+Following dates:
+================
+(from cusrust.synt side)
+12-10-2019 09:00
+19-10-2019 09:00
+26-10-2019 09:00
+9-11-2019 09:00
+16-11-2019 09:00
+23-11-2019 09:00
+30-11-2019 09:00
+14-12-2019 09:00
