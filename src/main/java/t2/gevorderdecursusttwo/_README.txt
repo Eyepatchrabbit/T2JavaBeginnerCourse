@@ -67,9 +67,32 @@ Exception handeling
 
 Lesson 3
 --------
+2soorten exceptions:
+    -checked exceptions:
+        ->verplicht op te vangen->anders compilatiefout
+        =>gebruik wanneer hoge kans om een fout in te geven
+    -runtime exception: (unchecked exception)
+        -niet verplicht om op te vangen (zoals michmatch exception)
+        ->omdat niet altijd zeker kan zijn wat een gebruiker zal ingeven! =>weet niet altijd dat deze effectief can gebeuren
+
+We kunnen zelf exceptions gooien met "throw" keyword
+
+doorgooien
+    ->als tussenpartij zijn best fouten van andere partij doorgeven naar groter geheel
+    =>meestal de meest logische keuze
+      ->"throws" gebruiken
+        ->enkel bruikbaar op methodes!
+
+Kunnen zelf ook een exception aanmaken
+    ->java klasse die extend van exception of klasse die zelf van exception extends
+
+    als zelfgemaakte exception van Runtimeexception extends->niet nodig door te geven!
 
 Lesson 4
 --------
+Generieken->gebruikt als we op voorhand niet weten met wat we te maken gaan hebben
+    vb: list->gaan we specifieren wat we er gaan inzetten
+    ->ook bij het uitsuren van vb json data->hier hervormen van de data naar een Object waar je mee kunyt gaan werken in code
 
 Lesson 5
 --------
@@ -92,7 +115,6 @@ Lesson 10
 Following dates:
 ================
 (from cusrust.synt side)
-12-10-2019 09:00
 19-10-2019 09:00
 26-10-2019 09:00
 9-11-2019 09:00
@@ -100,3 +122,18 @@ Following dates:
 23-11-2019 09:00
 30-11-2019 09:00
 14-12-2019 09:00
+
+Onderdelen te zien:
+===================
+Programma
+- Het opsommingstype =>enumeraties
+- Eenvoudige klassen
+- Interfaces
+- Geneste en anonieme klassen
+- Lamba expressions
+- Exception handling
+- Javadoc
+- Generieken
+- Collections
+- Lezen en schrijven
+- Systeembronnen gebruiken

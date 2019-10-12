@@ -139,3 +139,16 @@ Les 10
 
 recursive call: "main(args)" ->alternatieve methode voor spel terug te beginnen
     =>zie hoe het gebruikt werd in de minenverger game!
+
+Programma
+==========
+- Inleiding
+- De Java Development Kit
+- Mijn eerste java-toepassing
+- Programmatielogica
+- De java programmeertaal
+- Object-georiënteerd programmeren
+- Arrays
+- Klassen definiëren
+- Associaties
+- Overerving en klasse-hierarchie
