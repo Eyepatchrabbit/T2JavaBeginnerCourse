@@ -94,8 +94,24 @@ Generieken->gebruikt als we op voorhand niet weten met wat we te maken gaan hebb
     vb: list->gaan we specifieren wat we er gaan inzetten
     ->ook bij het uitsuren van vb json data->hier hervormen van de data naar een Object waar je mee kunyt gaan werken in code
 
+    =>klasse die intern een bepaald type gebruikt, dat pas bekend wordt wanneer men een instantie maakt van deze klasse
+
+/!\ mogelijk om meerdere genrieken te definieren ->order T, S,U,V,W,...
+
+kunnen ook per methode apart defieneren
+    ->anders voor ieder type een klasse maken
+
+
+(-)=>soms zijn generieken te generiek!!
+    ->dus moeten ietswat richtlijnen geven
+        ->regels opleggen!
+
+    <T Extends Animal>  ->Animal of iets dat er van overerft (elke subklasse)
+    <T super Animal>    ->Animal of superklasse (Object)
+
 Lesson 5
 --------
+JavaDock
 
 Lesson 6
 --------
@@ -115,13 +131,14 @@ Lesson 10
 Following dates:
 ================
 (from cusrust.synt side)
-19-10-2019 09:00
-26-10-2019 09:00
-9-11-2019 09:00
-16-11-2019 09:00
-23-11-2019 09:00
-30-11-2019 09:00
-14-12-2019 09:00
+6)  26-10-2019 09:00
+x
+5)  9-11-2019 09:00
+4)  16-11-2019 09:00
+3)  23-11-2019 09:00
+2)  30-11-2019 09:00
+x
+1)  14-12-2019 09:00
 
 Onderdelen te zien:
 ===================
