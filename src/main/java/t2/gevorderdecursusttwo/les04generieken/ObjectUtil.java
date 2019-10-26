@@ -7,6 +7,19 @@ import t2.gevorderdecursusttwo.les02.zoo.animals.Tiger;
 
 public class ObjectUtil {
 
+    /**
+     * Just a method to do an exercise on generics
+     * It sums the values of an object extending Number with one Extending Double
+     * @param first the first number
+     * @param second the second number
+     * @param <T> A type that is a {@link java.lang.Integer}
+     * @param <S> A type that is a {@link java.lang.Double}
+     * @return the calculated sum
+     */
+    public static <T extends Number, S extends Double> double sum(T first, S second) {
+        return first.intValue() + second.intValue();
+    }
+
     //public static <s> void print(s param) {
     public static <s extends Animal> s print(s param) {//Hier meer rechtlijnene geven
         System.out.println(param.getClass() + " - " + param);
@@ -33,7 +46,8 @@ public class ObjectUtil {
         });
 
         System.out.println(print(new Monkey()).makeNoise()); //can then use all the methods later for the object done
+
+        System.out.println(sum(new Integer(78899), new Double(9798999)));
+
     }
-
-
 }

@@ -22,7 +22,17 @@ public class NegativeArraySize {
         }
     }
 
+
+    /**
+     * get an item from an array
+     *
+     * @param position
+     * @return String containing a word
+     * @throws NegativeSizeException when position is less then 0
+     * @throws IndexToBigException when position given is bigger than the size of the actual array
+     * */
     public static String getItemFromArray(int position) throws NegativeSizeException, IndexToBigException {
+
         if (position < 0) {
             throw new NegativeSizeException();
         }

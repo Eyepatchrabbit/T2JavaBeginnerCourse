@@ -1,8 +1,8 @@
 package t2course.gevorderdencursusttwo.beginnercoursettwo.les02;
 
-import t2course.gevorderdencursusttwo.beginnercoursettwo.les02.homework.sumingOfDigitsInNumber;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import t2.beginnercoursettwo.les02.homework.sumingOfDigitsInNumber;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

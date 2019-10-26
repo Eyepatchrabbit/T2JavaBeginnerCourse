@@ -1,8 +1,8 @@
 package t2course.gevorderdencursusttwo.beginnercoursettwo.les02;
 
-import t2course.gevorderdencursusttwo.beginnercoursettwo.les02.homework.BmiCalculation;
 import org.junit.Assert;
 import org.junit.Test;
+import t2.beginnercoursettwo.les02.homework.BmiCalculation;
 
 
 public class BmiCalculationTest extends BmiCalculation {

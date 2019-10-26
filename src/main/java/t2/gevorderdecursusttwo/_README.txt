@@ -111,7 +111,25 @@ kunnen ook per methode apart defieneren
 
 Lesson 5
 --------
-JavaDock
+JavaDock ->maken van documentatie
+
+    //commentaar op 1 regel
+    /* ... */ =  commentaar multiline
+    /** ...*/ = documentatie
+
+    !code moet leesbaar zijn!
+        ->duidelijke naamgeving
+        ->code als "levende documentatie"!
+
+    Moet niet het enige zijn om de code te begrijpen
+        ->beter goede code zonder veel doc dan slechte code met veel documentatie
+
+Lezen en schrijven =>i/O operaties
+    wegschrijven -> data en configuratie!
+
+    path -> waar bestand terugvinden
+
+
 
 Lesson 6
 --------
@@ -131,8 +149,6 @@ Lesson 10
 Following dates:
 ================
 (from cusrust.synt side)
-6)  26-10-2019 09:00
-x
 5)  9-11-2019 09:00
 4)  16-11-2019 09:00
 3)  23-11-2019 09:00
@@ -154,3 +170,6 @@ Programma
 - Collections
 - Lezen en schrijven
 - Systeembronnen gebruiken
+
+
+nice :https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered
