@@ -133,9 +133,54 @@ Lezen en schrijven =>i/O operaties
 
 Lesson 6
 --------
+Lambda's
+    syntax:
+        (variabelennaam)    -> variabelenaam.doSomething();
+        formele parameters -> inhoud
+        vb: String s ->s.contains("s")
+
+    indien geen parameters: () =>ronde haken!
+
+    indien meerdere lijnen => {}
+
+    veelgebruikte functioneme interfaces die al bestaan:
+        Predicate<T>
+            public boolean test(T t) ->voor decreet datatype
+
+        Function<T,R>
+            public R apply (T t)
+                ->omvorming
+
+        Consumer<T>
+            ->voor aanpassingen (in "foreach" part of the stream)
+
+
+
+
 
 Lesson 7
 --------
+Streams
+    ->interne iteratie!
+        ->over alle elementen lopen
+        ->enkel behandeling van de elementen (lus voor u afgehandeld)
+
+        vb: source->iterator->stream ->{operatie op elk element}->stream->{terminal operation}
+
+
+        alles op een stream kan ook op een List gedaan worden
+            (niet een array!!!!->dan Arrays.stream(array) nodig
+
+        Stream<T> =>99% gebruikt (de generieken)
+        IntStream, LongStream, DoubleStream -> gebruikt als er een som of iets dergelijks nodig is
+
+    2 soorten bewerkingen;
+        -eindbewerkingen    ->sluit stream af
+            RESULTATEN:
+                -niets->consumerend bewerking, void
+                -enkel->reducerend bewerking => omvorming, zoals som (bijna nooit gebruikt)
+                -nieuwe verzameling->collecterende bewerking ->"collect()" methode ->meest voorkomende!
+        -Tussenbewerkingen
 
 Lesson 8
 --------
@@ -149,7 +194,6 @@ Lesson 10
 Following dates:
 ================
 (from cusrust.synt side)
-5)  9-11-2019 09:00
 4)  16-11-2019 09:00
 3)  23-11-2019 09:00
 2)  30-11-2019 09:00
