@@ -156,10 +156,6 @@ Lambda's
 
 
 
-
-
-Lesson 7
---------
 Streams
     ->interne iteratie!
         ->over alle elementen lopen
@@ -182,6 +178,13 @@ Streams
                 -nieuwe verzameling->collecterende bewerking ->"collect()" methode ->meest voorkomende!
         -Tussenbewerkingen
 
+        -omzetten ->"map" gebruiken =>omvormen van 1 naar het andere
+            -> public R apply(T t)
+
+Lesson 7
+--------
+
+
 Lesson 8
 --------
 
@@ -194,7 +197,6 @@ Lesson 10
 Following dates:
 ================
 (from cusrust.synt side)
-4)  16-11-2019 09:00
 3)  23-11-2019 09:00
 2)  30-11-2019 09:00
 x
