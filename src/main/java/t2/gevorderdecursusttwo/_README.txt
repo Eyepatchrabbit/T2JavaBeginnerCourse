@@ -131,7 +131,7 @@ Lezen en schrijven =>i/O operaties
 
 
 
-Lesson 6
+Lesson 6 & 7
 --------
 Lambda's
     syntax:
@@ -181,12 +181,29 @@ Streams
         -omzetten ->"map" gebruiken =>omvormen van 1 naar het andere
             -> public R apply(T t)
 
-Lesson 7
---------
-
 
 Lesson 8
 --------
+Databases
+    ->nieuwere manier leren (niet rij per rij)
+        =>ORM framework
+            ->JPA: most used framework (Java Persistence API)
+                 -richtlijnen hoe je moet werken, maar geen implementatie!
+            ->hibernate
+                -meest gebruikte implementatie, voorloper van JPA
+                    * configuratie door JPA annotaties (nu de standaard) of via xml
+                    *EntityManager -> aanmaken Query objecten aan en beheerd de entities
+
+
+
+Maven -> build, beheer, dependencies projecten
+    =>thirdparty elements kunnen gebruiken
+    ->oplijsten van exterene elementen
+
+Elements done (not direct coed related, external programms)
+    Installed xammp for on our computers
+        -seems I needed to set the port to 3307 (because some other program is using the default 3306 port)
+
 
 Lesson 9
 --------
@@ -197,7 +214,6 @@ Lesson 10
 Following dates:
 ================
 (from cusrust.synt side)
-3)  23-11-2019 09:00
 2)  30-11-2019 09:00
 x
 1)  14-12-2019 09:00

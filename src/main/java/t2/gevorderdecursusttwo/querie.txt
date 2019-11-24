@@ -1,0 +1,10 @@
+CREATE DATABASE java_gevorderd;
+USE java_gevorderd;
+CREATE TABLE movie(
+title VARCHAR(150) NOT NULL,
+description VARCHAR(2000) NOT NULL,
+id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+average FLOAT NOT NULL,
+popularity FLOAT NOT NULL);
+CREATE USER 'dbadmin'@'localhost' IDENTIFIED BY 'dbadmin';
+GRANT ALL PRIVILEGES ON java_gevorderd.movie TO 'dbadmin'@'localhost' IDENTIFIED BY 'dbadmin';
