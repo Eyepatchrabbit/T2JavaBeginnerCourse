@@ -182,7 +182,7 @@ Streams
             -> public R apply(T t)
 
 
-Lesson 8
+Lesson 8 - 10
 --------
 Databases
     ->nieuwere manier leren (niet rij per rij)
@@ -205,17 +205,15 @@ Elements done (not direct coed related, external programms)
         -seems I needed to set the port to 3307 (because some other program is using the default 3306 port)
 
 
-Lesson 9
---------
+Assocaties
+    =>meestal meerdere tabellen
+        ->kunnen onderlinge relatie met elkaar hebben
+            =>one-to-one or one-to-manny relatie
 
-Lesson 10
----------
 
 Following dates:
 ================
 (from cusrust.synt side)
-2)  30-11-2019 09:00
-x
 1)  14-12-2019 09:00
 
 Onderdelen te zien:
