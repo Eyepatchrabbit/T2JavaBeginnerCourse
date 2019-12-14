@@ -1,11 +1,12 @@
-package t2.gevorderdecursusttwo.les08_databases.users;
+package t2.gevorderdecursusttwo.les08_databases.school;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "department")
-public class Department {
+@Table(name = "course")
+public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
@@ -14,8 +15,8 @@ public class Department {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "department", cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-    private List<User> users;
+    @ManyToMany(mappedBy = "courses")
+    private List<Student> students =new ArrayList<Student>();
 
     public int getId() {
         return id;
@@ -33,12 +34,11 @@ public class Department {
         this.name = name;
     }
 
-    public List<User> getUsers() {
-        return users;
+    public List<Student> getStudents() {
+        return students;
     }
 
-    public void setUsers(List<User> users) {
-        this.users = users;
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
-
 }

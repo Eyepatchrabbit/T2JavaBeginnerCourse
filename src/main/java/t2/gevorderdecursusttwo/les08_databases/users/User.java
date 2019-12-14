@@ -23,7 +23,7 @@ public class User {
     @OneToOne(fetch = FetchType.LAZY, mappedBy = "user")
     private Adress adress;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL) //->if the other is a one-to-manny the other is a manny-to-one => Think about it in a logical way!!!!!
     @JoinColumn(name = "dep_id", nullable = false)
     private Department department;
 

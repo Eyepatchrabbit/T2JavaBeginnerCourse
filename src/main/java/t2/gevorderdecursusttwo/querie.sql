@@ -79,3 +79,46 @@ ADD COLUMN dep_id INT(11) DEFAULT(1),
 ADD FOREIGN KEY (dep_id) REFERENCES department(id) ON DELETE CASCADE;
 
 ALTER TABLE `user` CHANGE `dep_id` `dep_id` INT(11) NOT NULL DEFAULT '1';
+
+
+
+--school
+USE java_gevorderd;
+
+CREATE TABLE `student` (
+  `id` bigint(20) NOT NULL,
+  `first_name` varchar(250) NOT NULL,
+  `last_name` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `student_course` (
+  `student_id` bigint(20) NOT NULL,
+  `course_id` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `course` (
+  `id` bigint(20) NOT NULL,
+  `name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `student` ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `student_course`
+  ADD PRIMARY KEY (`student_id`,`course_id`),
+  ADD KEY `fk_course_id` (`course_id`);
+
+ALTER TABLE `course` ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `student`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+ALTER TABLE `course`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `student_course`
+  ADD CONSTRAINT `fk_student_id` FOREIGN KEY (`student_id`) REFERENCES `student` (`id`),
+  ADD CONSTRAINT `fk_course_id` FOREIGN KEY (`course_id`) REFERENCES `course` (`id`);
+
+GRANT ALL PRIVILEGES ON java_gevorderd.student TO 'dbadmin'@'localhost' IDENTIFIED BY 'dbadmin';
+GRANT ALL PRIVILEGES ON java_gevorderd.student_course TO 'dbadmin'@'localhost' IDENTIFIED BY 'dbadmin';
+GRANT ALL PRIVILEGES ON java_gevorderd.course TO 'dbadmin'@'localhost' IDENTIFIED BY 'dbadmin';
